@@ -1,11 +1,11 @@
 import React from 'react';
+import './Availableservices.css'
 
-const Services = ({ offers }) => {
-
-    const { service_image, service_name, service_description
-    } = offers;
+const Availableservices = ({ items }) => {
+    // console.log(items);
+    const { service_image, service_name, service_description } = items
     return (
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        <div className="card card-compact w-96 bg-base-100 shadow-xl card-image">
             <figure><img src={service_image} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{service_name}</h2>
@@ -18,4 +18,4 @@ const Services = ({ offers }) => {
     );
 };
 
-export default Services;
+export default Availableservices;

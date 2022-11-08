@@ -7,8 +7,7 @@ import Services from './Services/Services';
 
 const Home = () => {
     const getservices = useLoaderData();
-    // const [services, setServices] = useState([]);
-    // console.log(services.length);
+
     if (getservices.length > 3) {
 
         getservices.length = 3;
