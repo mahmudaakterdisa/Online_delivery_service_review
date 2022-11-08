@@ -1,0 +1,44 @@
+[
+    {
+        "service_id": 1,
+        "service_name": "Wedding and Engagement Cakes",
+        "service_image": "https://img.freepik.com/free-photo/wedding-couple-cutting-wedding-cake_1303-10522.jpg?w=1380&t=st=1667900607~exp=1667901207~hmac=2b0b9e7dbc2b0f9271be2555f6f16ced62435f5697ab8a2ce28e7a6f73fb9c91",
+        "price": 160,
+        "service-description": "With its outstanding vanilla flavor, pillowy soft crumb, and creamy vanilla buttercream, this is truly the best vanilla cake I’ve ever had. Make sure you read through the recipe and recipe notes before beginning. This recipe yields approximately 8 cups of batter which is helpful if you need this batter for different cake pans and conversions."
+    },
+    {
+        "service_id": 2,
+        "service_name": "Birthday Cakes",
+        "service_image": "https://img.freepik.com/free-photo/baby-birthday-cake_8353-8407.jpg?w=1380&t=st=1667902504~exp=1667903104~hmac=4df643df4c83a3e9dd7e90cefe662ec09db47a878e9bb76a8ad96bf83678d241",
+        "price": 120,
+        "service-description": "Fondant Icing of a cake is a play dough like sugar paste. It is made with a mix of glucose, sugar and gelatin. It has a very smooth & silky texture and can be rolled out on the cake or sculpted cake. Fondant cakes can be used to give the cake a smooth finishing and for making sculptures on the cake."
+    },
+    {
+        "service_id": 3,
+        "service_name": "valentines Day ",
+        "service_image": "https://www.fnp.com/images/pr/l/v20210701022516/red-velvet-heart-cake-1kg_1.jpg",
+        "price": 220,
+        "service-description": "Red velvet cake tastes like very mild cocoa with a slightly tart edge. The cream cheese frosting is the most forward flavor. Perhaps even more important than the taste is the texture: smooth, soft, tender and light with creamy icing."
+    },
+    {
+        "service_id": 4,
+        "service_name": "Religious Celebrations",
+        "service_image": "https://img.freepik.com/free-photo/close-up-view-chocolate-cake-concept_23-2148746724.jpg?w=1380&t=st=1667902325~exp=1667902925~hmac=2d518f019d4a492dc9c3bbcf8834a6081785874d2c4012d859d2fb7fa3bfa46f",
+        "price": 250,
+        "service-description": "Chocolate cake, in particular, is a favourite pick by many people. The main ingredient of the chocolate in this cake is coco which helps our brain release endorphins or the “feel good” chemical. This is why whenever we eat this cake, our moods lighten and we feel a lot better."
+    },
+    {
+        "service_id": 5,
+        "service_name": "Baby Shower Cakes ",
+        "service_image": "https://img.freepik.com/free-photo/front-view-beautiful-baby-shower-concept_23-2148731317.jpg?w=826&t=st=1667902703~exp=1667903303~hmac=eb20095f09f83f8d0b0592d58575fc614fdc94e0040d57bac80b68f43e80ce30",
+        "price": 280,
+        "service-description": "It should be fluffy, spongy, and moist. Having fewer ingredients and proper baking methods make the cake more appealing. Using quality ingredients are always add-ons. Flavours- The most necessary feature of any cake is its flavour."
+    },
+    {
+        "service_id": 6,
+        "service_name": "School Enrollment and Graduation Cakes ",
+        "service_image": "https://img.freepik.com/free-photo/halloween-decor-white-table-black-surface_176420-9112.jpg?w=1380&t=st=1667902863~exp=1667903463~hmac=3765a7b0b0ebc800e855ad8fabdb67879459bcebdae8900772fdaa97a35b9aaa",
+        "price": 280,
+        "service-description": "The texture of this dessert is extremely rich and creamy, and the taste can range from sweet to highly tangy. In some places, cheesecake takes the form of a savory tart, rather than a dessert food."
+    }
+]

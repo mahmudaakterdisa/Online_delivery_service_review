@@ -1,3 +1,18 @@
-/* .banner-image {
-    height: 30vh;
-} */
+.home-container {
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+
+.services-container {
+    width: 100%;
+    margin: 10% 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.button-container {
+    margin-bottom: 10%;
+    margin-left: 45%;
+}
