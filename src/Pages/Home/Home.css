@@ -4,6 +4,18 @@
 
 }
 
+.about-container {
+    border: 2px solid red;
+    border-radius: 5px;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2%;
+    background-color: rgb(118, 0, 0);
+    color: white;
+    padding: 5%;
+}
+
 
 .services-container {
     width: 100%;
