@@ -51,7 +51,7 @@ const Header = () => {
                                         {/* <button >LogOut</button>
                                         <Button onClick={handlelogout} variant="danger">LogOut</Button> */}
                                         <Link to='/reviews' className='me-3'>
-                                            <Button variant="warning">Add reviews</Button>
+                                            <Button variant="warning">My reviews</Button>
                                         </Link>
                                         <Link to='' className='me-3'>
                                             <Button variant="warning">Add Services</Button>

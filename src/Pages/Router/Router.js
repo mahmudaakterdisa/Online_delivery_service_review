@@ -4,6 +4,7 @@ import Servicedetails from "../../Servicedetails/Servicedetails";
 import Allservices from "../Allservices/Allservices";
 import Home from "../Home/Home";
 import Login from "../Login/Login";
+import Privaterouter from "../Privateroute/Privaterouter";
 import Register from "../Register/Register";
 import Myreview from "../Review/Myreview";
 
@@ -41,7 +42,7 @@ export const router = createBrowserRouter([
             {
                 path: '/reviews',
                 // loader: ({ params }) => fetch(`https://assignment-11-server-ecru.vercel.app/services/${params.id}`),
-                element: <Myreview></Myreview>
+                element: <Privaterouter> <Myreview></Myreview></Privaterouter>
             },
 
         ]
