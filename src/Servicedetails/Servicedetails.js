@@ -22,12 +22,14 @@ const Servicedetails = () => {
         const image = form.image.value;
         const message = form.message.value;
         const email = user?.email || 'unregistered';
+        const date = form.date.value;
 
         //to post review
 
         const review = {
             service: _id,
             serviceName: service_name,
+            review_date: date,
             price,
             customer: name,
             email,
@@ -109,7 +111,9 @@ const Servicedetails = () => {
                                             <input name='name' type="text" placeholder="Name" className="input w-full" />
                                             <input name='image' type="text" placeholder="Photo URL" className="input w-full" />
                                             <textarea name='message' className="textarea textarea-bordered" placeholder="Your review"></textarea>
+                                            <input type="date" id="start" name="date"
 
+                                                min="2022-01-01" max="2025-12-31" />
 
                                             <input type="text" placeholder="Your email" defaultValue={user?.email} className="input w-full" readOnly />
                                             <input className='btn btn-primary' type="submit" value="Submit"></input>

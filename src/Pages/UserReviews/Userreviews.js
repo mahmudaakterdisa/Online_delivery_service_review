@@ -9,7 +9,7 @@ const Userreviews = ({ myreviews, handledelete }) => {
 
 
 
-
+    console.log(_id);
 
     return (
         <div className="card w-96 bg-base-100 shadow-xl">

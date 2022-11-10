@@ -9,13 +9,13 @@ import Services from './Services/Services';
 const Home = () => {
     const getservices = useLoaderData();
 
-    if (getservices.length > 3) {
+    // if (getservices.length > 3) {
 
-        getservices.length = 3;
+    //     getservices.length = 3;
 
 
 
-    }
+    // }
     return (
         <div className='home-container'>
             <div className='banner-image mt-10'>

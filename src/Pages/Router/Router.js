@@ -34,7 +34,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/services',
-                loader: () => fetch('https://assignment-11-server-ecru.vercel.app/services'),
+                // loader: () => fetch('https://assignment-11-server-ecru.vercel.app/services?limit=100'),
                 element: <Allservices></Allservices>
             },
             {
@@ -58,11 +58,7 @@ export const router = createBrowserRouter([
                 loader: ({ params }) => fetch(`https://assignment-11-server-ecru.vercel.app/review/${params.id}`),
                 element: <Updatereview></Updatereview>
             },
-            {
-                // path: '/allreviews',
-                // loader: () => ,
-                // element: <Allreviews></Allreviews>
-            },
+
 
         ]
     }

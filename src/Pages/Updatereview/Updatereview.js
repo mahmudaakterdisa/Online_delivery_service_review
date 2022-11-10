@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
 
 const Updatereview = () => {
     const storedreview = useLoaderData();
+
+    const params = useParams();
     const [user, setUser] = useState(storedreview);
-    // console.log(storedreview);
+
 
     const handlereview = (event) => {
 
         event.preventDefault();
-        // console.log(user)
 
-        fetch(`https://assignment-11-server-ecru.vercel.app/review/${storedreview._id}`, {
+
+        fetch(`https://assignment-11-server-ecru.vercel.app/review/${params.id}`, {
 
             method: 'PUT',
             headers: {
