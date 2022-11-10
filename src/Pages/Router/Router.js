@@ -60,7 +60,7 @@ export const router = createBrowserRouter([
                 element: <Updatereview></Updatereview>
             },
             {
-                path: 'blog',
+                path: '/blog',
 
                 element: <Blog></Blog>
             }

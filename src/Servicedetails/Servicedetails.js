@@ -104,9 +104,7 @@ const Servicedetails = () => {
                     {
                         user?.email ?
                             <>
-                                {/* <Link to='/reviews'>
-                                    <button className="btn btn-primary">ADD REVIEWS</button>
-                                </Link> */}
+
                                 <div className='review-container'>
                                     <form onSubmit={handlereview} className='form-body'>
                                         <div className='grid grid-cols-1 gap-4 p-5'>
@@ -118,14 +116,14 @@ const Servicedetails = () => {
                                                 min="2022-01-01" max="2025-12-31" />
 
                                             <input type="text" placeholder="Your email" defaultValue={user?.email} className="input w-full" readOnly />
-                                            <input className='btn btn-primary' type="submit" value="Submit"></input>
+                                            <input className='btn btn-danger' type="submit" value="Submit"></input>
                                         </div>
 
                                     </form>
                                 </div>
                             </>
                             :
-                            <h2>Please login to add a review</h2>
+                            <h2>Please <Link to='/login'>Login </Link> to add a review</h2>
                     }
 
                 </div>

@@ -71,7 +71,7 @@ const Addservice = () => {
                         min="2022-01-01" max="2025-12-31" />
 
                     <input name='overview' type="text" placeholder="service overview" className="input w-full" />
-                    <input className='btn btn-primary' type="submit" value="Submit"></input>
+                    <input className='btn btn-danger' type="submit" value="Submit"></input>
                 </div>
 
             </form>

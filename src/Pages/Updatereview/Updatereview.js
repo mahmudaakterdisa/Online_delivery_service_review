@@ -45,7 +45,7 @@ const Updatereview = () => {
 
 
 
-                    <input className='btn btn-primary' type="submit" value="Submit"></input>
+                    <input className='btn btn-danger' type="submit" value="Submit"></input>
                 </div>
             </form>
         </div>

@@ -127,10 +127,7 @@ const Login = () => {
                                 <button onClick={handlegoogleevent}><FaGoogle></FaGoogle>signIn with Google</button>
 
                             </div>
-                            {/* <div className="form-control mt-6 googlebutton">
-                                <button onClick={handlegithubeevent}><GoMarkGithub></GoMarkGithub>signIn with Github</button>
 
-                            </div> */}
                         </form>
                     </div>
                 </div>
