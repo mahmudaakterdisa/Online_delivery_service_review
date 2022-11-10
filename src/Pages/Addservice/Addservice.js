@@ -2,8 +2,11 @@ import React from 'react';
 
 import Moment from 'react-moment';
 import './Addservice.css'
+import useTitle from '../../hooks/useTitle';
 
 const Addservice = () => {
+
+    useTitle('Add service');
 
     const handleService = (event) => {
         event.preventDefault();

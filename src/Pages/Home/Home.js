@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { Link, useLoaderData } from 'react-router-dom';
+import useTitle from '../../hooks/useTitle';
 import Banner from '../Banner/Banner';
 import About from './About/About';
 import './Home.css'
@@ -8,6 +9,7 @@ import Services from './Services/Services';
 
 const Home = () => {
     const getservices = useLoaderData();
+    useTitle('Home');
 
     // if (getservices.length > 3) {
 

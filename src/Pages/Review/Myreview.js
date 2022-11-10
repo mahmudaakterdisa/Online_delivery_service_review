@@ -2,9 +2,12 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Authcontext } from '../Authprovider/Authprovider';
 import Userreviews from '../UserReviews/Userreviews';
 import './Review.css'
+import useTitle from '../../hooks/useTitle';
 
 const Myreview = () => {
+
     const { user, logout } = useContext(Authcontext);
+
     const [reviews, setReviews] = useState([]);
 
 
@@ -26,7 +29,7 @@ const Myreview = () => {
             })
             .then(data => setReviews(data))
     }, [user?.email, logout])
-
+    useTitle('My-review');
 
     //delete
     const handledelete = (id) => {

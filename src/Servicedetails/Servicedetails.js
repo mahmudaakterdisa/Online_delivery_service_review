@@ -2,12 +2,14 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import Allreviews from '../Pages/Allreviews/Allreviews';
 import { Authcontext } from '../Pages/Authprovider/Authprovider';
-import './Servicedetails.css'
+import './Servicedetails.css';
+
 
 const Servicedetails = () => {
     const detailsdata = useLoaderData();
 
     const { user } = useContext(Authcontext);
+
 
 
 

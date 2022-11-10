@@ -1,10 +1,13 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
+import useTitle from '../../hooks/useTitle';
 import './Blog.css'
 
 const Blog = () => {
+    useTitle('Blog');
     return (
         <div className='Blog-container'>
+
             <Accordion>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Difference between SQL and NoSQL</Accordion.Header>

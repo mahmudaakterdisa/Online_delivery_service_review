@@ -4,6 +4,7 @@ import { GoMarkGithub } from "react-icons/go"
 import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Authcontext } from '../Authprovider/Authprovider';
+import useTitle from '../../hooks/useTitle';
 
 const Login = () => {
     const [errortext, setErrortext] = useState('');
@@ -11,6 +12,7 @@ const Login = () => {
     const { signIn } = useContext(Authcontext);
     const navigate = useNavigate();
     const location = useLocation();
+    useTitle('Login');
 
     const from = location.state?.from?.pathname || '/'
 
@@ -125,10 +127,10 @@ const Login = () => {
                                 <button onClick={handlegoogleevent}><FaGoogle></FaGoogle>signIn with Google</button>
 
                             </div>
-                            <div className="form-control mt-6 googlebutton">
+                            {/* <div className="form-control mt-6 googlebutton">
                                 <button onClick={handlegithubeevent}><GoMarkGithub></GoMarkGithub>signIn with Github</button>
 
-                            </div>
+                            </div> */}
                         </form>
                     </div>
                 </div>
