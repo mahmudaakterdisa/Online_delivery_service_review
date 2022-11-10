@@ -1,15 +1,19 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
+import Allreviews from '../Pages/Allreviews/Allreviews';
 import { Authcontext } from '../Pages/Authprovider/Authprovider';
 import './Servicedetails.css'
 
 const Servicedetails = () => {
-    const detailsdata = useLoaderData()
-    const { user } = useContext(Authcontext)
+    const detailsdata = useLoaderData();
 
-    // console.log(detailsdata)
+    const { user } = useContext(Authcontext);
+
+
+
     const { service_image, service_name, service_description, price, _id, service_id } = detailsdata;
 
+    // console.log(service_name, _id)
 
     const handlereview = (event) => {
         event.preventDefault();
@@ -55,6 +59,18 @@ const Servicedetails = () => {
     }
 
 
+
+
+    const [allreview, setAllreview] = useState([]);
+
+    console.log(allreview)
+    useEffect(() => {
+        fetch(`https://assignment-11-server-ecru.vercel.app/review/${_id}`)
+            .then(res => res.json())
+            .then(data => setAllreview(data))
+    }, [_id])
+
+
     return (
         <div className='details-container'>
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
@@ -71,7 +87,12 @@ const Servicedetails = () => {
 
             <div>
                 <div>
-                    <h1>right here</h1>
+
+                    {
+                        allreview.map((rev) => <Allreviews rev={rev}></Allreviews>)
+                    }
+
+
                 </div>
 
 

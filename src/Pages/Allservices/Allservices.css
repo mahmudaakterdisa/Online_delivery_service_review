@@ -1,10 +1,10 @@
 .allservices-container {
     width: 80%;
-    height: 100vh;
+    /* height: 100vh; */
     margin-left: 10%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2%;
     margin-top: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }

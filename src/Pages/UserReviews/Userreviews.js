@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Userreviews.css'
 
 const Userreviews = ({ myreviews, handledelete }) => {
-    console.log(myreviews);
-    const { customer, email, image, message, serviceName, _id
+
+    const { customer, email, image, message, serviceName, _id, status
     } = myreviews;
 
 
@@ -18,7 +19,10 @@ const Userreviews = ({ myreviews, handledelete }) => {
                 <p>{message}</p>
                 <div className="card-actions justify-end">
                     <button onClick={() => handledelete(_id)} className="btn btn-primary">Delete</button>
-                    <button className="btn btn-primary">Edit</button>
+                    <Link to={`/update/${_id}`}>
+                        <button className="btn btn-primary">Edit</button>
+                    </Link>
+
                 </div>
             </div>
         </div>
