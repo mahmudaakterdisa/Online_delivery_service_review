@@ -18,7 +18,7 @@ const Home = () => {
     // }
     return (
         <div className='home-container'>
-            <div className='banner-image mt-10'>
+            <div className='banner-image mt-10 homebanner-container'>
                 <Banner></Banner>
             </div>
 

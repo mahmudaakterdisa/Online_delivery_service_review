@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Services.css'
 
 const Services = ({ offers }) => {
 
     const { service_image, service_name, service_description, price, _id
     } = offers;
     return (
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        <div className="card card-compact w-96 bg-base-100 shadow-xl allservice-container">
             <figure><img src={service_image} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{service_name}</h2>
