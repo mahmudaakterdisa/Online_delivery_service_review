@@ -4,17 +4,28 @@ import Userreviews from '../UserReviews/Userreviews';
 import './Review.css'
 
 const Myreview = () => {
-    const { user } = useContext(Authcontext);
+    const { user, logout } = useContext(Authcontext);
     const [reviews, setReviews] = useState([]);
 
 
 
     useEffect(() => {
 
-        fetch(`https://assignment-11-server-ecru.vercel.app/review?email=${user?.email}`)
-            .then(res => res.json())
+        fetch(`https://assignment-11-server-ecru.vercel.app/review?email=${user?.email}`, {
+            headers: {
+                authorization: `Bearer ${localStorage.getItem('sweet-token')}`
+            }
+        })
+            .then(res => {
+
+                if (res.status === 401 || res.status === 403) {
+                    return logout();
+                }
+
+                return res.json();
+            })
             .then(data => setReviews(data))
-    }, [user?.email])
+    }, [user?.email, logout])
 
 
     //delete

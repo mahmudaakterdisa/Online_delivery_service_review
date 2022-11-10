@@ -48,6 +48,7 @@ const Authprovider = ({ children }) => {
 
     const logout = () => {
         setLoading(true);
+        localStorage.removeItem('sweet-token');
         return signOut(auth);
     }
 
