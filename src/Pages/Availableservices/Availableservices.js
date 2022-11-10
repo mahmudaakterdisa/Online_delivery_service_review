@@ -23,7 +23,7 @@ const Availableservices = ({ items }) => {
                 <p>{service_description.slice(100)}..</p>
                 <div className="card-actions justify-end">
                     <Link to={`/details/${_id}`}>
-                        <button className="btn btn-primary">View Details</button>
+                        <button className="btn btn-danger">View Details</button>
                     </Link>
 
                 </div>

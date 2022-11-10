@@ -23,12 +23,12 @@ const Header = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home" className='me-5'>React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="#home" className='me-5'>Sweet Delights</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto ms-5">
                         <Nav.Link href='/'>Home</Nav.Link>
-                        {/* <Nav.Link href='login'>LogIn</Nav.Link> */}
+                        <Nav.Link href='blog'>Blog</Nav.Link>
                         {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">

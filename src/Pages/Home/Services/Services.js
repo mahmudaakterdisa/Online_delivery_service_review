@@ -14,7 +14,7 @@ const Services = ({ offers }) => {
                 <p>{service_description.slice(50)}..</p>
                 <div className="card-actions justify-end">
                     <Link to={`/details/${_id}`}>
-                        <button className="btn btn-primary">View Details</button>
+                        <button className="btn btn-danger">View Details</button>
                     </Link>
 
                 </div>

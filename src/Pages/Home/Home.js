@@ -46,14 +46,40 @@ const Home = () => {
 
             <div className='button-container'>
                 <Link to='/services'>
-                    <Button variant="primary" size="lg">
+                    <Button variant="danger" size="lg">
                         Show All
                     </Button>
                 </Link>
 
             </div>
 
-            <div>
+
+
+
+            <div className='Donuts-container'>
+                <div className='donuts-text'>
+                    <h2>Sweet Delights Special Donuts</h2>
+                </div>
+
+                <div className='special-container'>
+                    <div >
+                        <img src='https://img.freepik.com/free-photo/glazed-chocolate-pink-donuts-marble-surface_114579-18300.jpg?w=1380&t=st=1668084665~exp=1668085265~hmac=54397ddb150394a4b4e66a048a51bd53288c0d1bac43bc44a9a38a9afd3860a6' alt="Shoes" />
+
+                    </div>
+
+                    {/* 2nd offer */}
+                    <div>
+                        <img src='https://img.freepik.com/free-photo/high-angle-view-three-fresh-donuts-wooden-chopping-board_23-2147909346.jpg?w=1380&t=st=1668085286~exp=1668085886~hmac=c54b147e20bdae4670ffea74c244a0ea7e6d889b9ea9da90cc5a38474f91430e' alt="Shoes" />
+
+                    </div>
+
+                    {/* 3rd offer */}
+                    <div>
+                        <img src='https://img.freepik.com/free-photo/cup-herbal-tea-with-plate-sweet-cookies-stone-surface_114579-54380.jpg?w=1380&t=st=1668085199~exp=1668085799~hmac=96af4c534f7d6f6b6af856c6fad9af1dba69fa7f60a31fd4350a24792dc6b6b9' alt="Shoes" />
+
+                    </div>
+                </div>
+
 
             </div>
 

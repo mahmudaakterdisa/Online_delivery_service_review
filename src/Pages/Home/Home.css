@@ -29,3 +29,15 @@
     margin-bottom: 10%;
     margin-left: 45%;
 }
+
+.donuts-text {
+    text-align: center;
+    margin: 10% 0;
+}
+
+.special-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2%;
+    margin-bottom: 10%;
+}
