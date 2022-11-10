@@ -12,7 +12,7 @@ const Userreviews = ({ myreviews, handledelete }) => {
     console.log(_id);
 
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-base-100 shadow-xl userreview-container">
             <figure><img src={image} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{serviceName}</h2>
@@ -20,7 +20,7 @@ const Userreviews = ({ myreviews, handledelete }) => {
                 <div className="card-actions justify-end">
                     <button onClick={() => handledelete(_id)} className="btn btn-primary">Delete</button>
                     <Link to={`/update/${_id}`}>
-                        <button className="btn btn-primary">Edit</button>
+                        <button className="btn btn-danger">Edit</button>
                     </Link>
 
                 </div>

@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import './Allreviews.css'
 
 const Allreviews = ({ rev }) => {
 
     return (
         <div>
-            <h3>{rev.serviceName}</h3>
-            <h4>{rev.email}</h4>
-            <p>{rev.message}</p>
+            <div className='review-image'>
+                <img src={rev.image} alt="" />
+            </div>
+            <div>
+                <h3>{rev.serviceName}</h3>
+                <h4>{rev.email}</h4>
+                <p>{rev.message}</p>
+            </div>
+
         </div>
     );
 };

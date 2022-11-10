@@ -16,3 +16,20 @@
     margin-left: 10%; */
     background-color: gainsboro;
 }
+
+@media screen and (max-width: 576px) {
+
+    .details-container {
+        width: 80%;
+        /* margin-left: 10%; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* row-gap: 5%; */
+        margin-top: 10%;
+        margin-bottom: 40%;
+    }
+
+    .detailsaboutservice {
+        width: 100%;
+    }
+}
