@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
 import { Authcontext } from '../Authprovider/Authprovider';
 
 const Register = () => {
     const { createUser } = useContext(Authcontext);
+    const navigate = useNavigate();
+    const location = useLocation();
     useTitle('Register')
 
     const handlesubmitform = (event) => {
@@ -21,7 +23,7 @@ const Register = () => {
                 const user = result.user;
                 console.log(user);
                 form.reset();
-
+                navigate('/');
 
             })
 

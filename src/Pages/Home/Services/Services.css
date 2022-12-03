@@ -1,7 +1,11 @@
-@media screen and (max-width: 576px) {
-    .allservice-container {
-        width: 90%;
-        height: 85%;
+.allservice-container img {
+    width: 100%;
+    height: 30vh;
+}
 
-    }
+@media screen and (max-width: 576px) {
+    /* .allservice-container img {
+        width: 100%;
+        height: 30vh;
+    } */
 }

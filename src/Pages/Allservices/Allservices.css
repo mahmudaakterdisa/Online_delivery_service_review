@@ -1,24 +1,22 @@
+.allservice {
+    width: 100vw;
+
+    padding: 5%;
+}
+
+
+
 .allservices-container {
     width: 80%;
-    /* height: 100vh; */
     margin-left: 10%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 2%;
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 @media screen and (max-width: 576px) {
     .allservices-container {
         width: 100%;
-        /* height: 100vh; */
-        margin-left: 5%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        /* row-gap: 2%; */
+        margin-left: 0;
         margin-top: 10%;
-        margin-bottom: 280%;
+
 
     }
 }

@@ -10,6 +10,7 @@ import Login from "../Login/Login";
 import Privaterouter from "../Privateroute/Privaterouter";
 import Register from "../Register/Register";
 import Myreview from "../Review/Myreview";
+import Triall from "../Trial/Triall";
 import Updatereview from "../Updatereview/Updatereview";
 
 
@@ -60,9 +61,9 @@ export const router = createBrowserRouter([
                 element: <Updatereview></Updatereview>
             },
             {
-                path: '/blog',
+                path: 'trial',
 
-                element: <Blog></Blog>
+                element: <Triall></Triall>
             }
 
 

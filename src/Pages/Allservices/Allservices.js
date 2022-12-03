@@ -5,23 +5,20 @@ import './Allservices.css'
 
 const Allservices = () => {
     const allservicesdata = useLoaderData();
-    console.log(allservicesdata)
 
-    // const [allservices, setAllservices] = useState();
 
-    // useEffect(() => {
-    //     fetch('https://assignment-11-server-ecru.vercel.app/services?limit=100')
 
-    //         .then(res => res.json())
-    //         .then(data => setAllservices(data))
-    // }, [])
-    // console.log(allservices);
 
     return (
-        <div className='allservices-container'>
-            {
-                allservicesdata.map((items) => <Availableservices key={items._id} items={items}></Availableservices>)
-            }
+        <div className='allservice' >
+            <div className='allservices-container grid sm:grid-cols-2 grid-cols-1 gap-3 justify-between'>
+                {
+                    allservicesdata.map((items) => <Availableservices key={items._id} items={items}></Availableservices>)
+                }
+            </div>
+
+
+
         </div>
     );
 };

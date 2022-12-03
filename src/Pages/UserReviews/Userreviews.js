@@ -15,7 +15,7 @@ const Userreviews = ({ myreviews, handledelete }) => {
 
 
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl userreview-container">
+            <div className="card  bg-base-100 shadow-xl userreview-container">
                 <figure><img src={image} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{serviceName}</h2>

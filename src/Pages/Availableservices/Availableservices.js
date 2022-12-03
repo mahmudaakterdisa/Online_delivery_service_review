@@ -8,7 +8,7 @@ const Availableservices = ({ items }) => {
     // console.log(items);
     const { service_image, service_name, service_description, price, _id } = items
     return (
-        <div className="card card-compact w-96 bg-base-100 shadow-xl card-image available-container">
+        <div className="card card-compact bg-base-100 shadow-xl card-image">
             <PhotoProvider>
                 <PhotoView src={service_image}>
                     <figure><img src={service_image} alt="Shoes" /></figure>

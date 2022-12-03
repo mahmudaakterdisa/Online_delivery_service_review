@@ -1,0 +1,45 @@
+.updatereview-container {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.reviewform {
+    width: 80%;
+    height: 80%;
+    background-color: gainsboro;
+}
+
+
+
+/* responsive on moblie device */
+@media screen and (max-width: 576px) {
+    .updatereview-container {
+        padding-top: 0;
+        padding-left: 0;
+        height: 70vh;
+        margin-top: 30%;
+        margin-left: 10%;
+    }
+
+    .reviewform {
+        width: 80%;
+        height: 70%;
+    }
+
+}
+
+/* responsive on tab view */
+@media screen and (min-width: 577px) and (max-width: 900px) {
+    .updatereview-container {
+
+        margin-top: 25%;
+        margin-left: 5%;
+    }
+
+    .reviewform {
+        width: 90%;
+        height: 80%;
+    }
+}

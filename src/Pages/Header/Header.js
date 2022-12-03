@@ -28,18 +28,8 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto ms-5">
                         <Nav.Link href='/'>Home</Nav.Link>
-                        <Nav.Link href='blog'>Blog</Nav.Link>
-                        {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
-                            </NavDropdown.Item>
-                        </NavDropdown> */}
+
+
                     </Nav>
                     <Nav>
                         <Nav.Link href='/'>
@@ -48,16 +38,15 @@ const Header = () => {
                             {
                                 user?.uid ?
                                     <>
-                                        {/* <button >LogOut</button>
-                                        <Button onClick={handlelogout} variant="danger">LogOut</Button> */}
+
                                         <Link to='/reviews' className='me-3'>
                                             <Button variant="warning">My reviews</Button>
                                         </Link>
-                                        <Link to='/addservice' className='me-3'>
-                                            <Button variant="warning">Add Services</Button>
+                                        <Link to='/addservice' className='me-3' >
+                                            <Button variant="warning" >Add Services</Button>
                                         </Link>
 
-                                        <Link className='me-3'>
+                                        <Link>
                                             <Button onClick={handlelogout} variant="danger">LogOut</Button>
                                         </Link>
 

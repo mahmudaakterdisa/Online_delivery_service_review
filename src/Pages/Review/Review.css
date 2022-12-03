@@ -1,21 +1,44 @@
-.myreviews-container {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 5%;
+.reviews-section {
+    height: 100vh;
 }
 
+.myreviews-container {
+    width: 80%;
+    height: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    padding: 5%;
+
+}
+
+
 @media screen and (max-width: 576px) {
+    .reviews-section {
+        height: 80vh;
+        margin-bottom: 10%;
+    }
+
     .myreviews-container {
-        width: 80%;
-        /* margin-left: 10%; */
+        width: 70%;
         margin-top: 10%;
-        margin-bottom: 80%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        /* row-gap: 5%; */
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 900px) {
+    .reviews-section {
+        height: 80vh;
+        margin-bottom: 10%;
+    }
+
+    .myreviews-container {
+        width: 70%;
+        height: 80%;
+        margin-top: 10%;
+        margin-bottom: 0;
+        padding: 5%;
+        margin-left: 15%;
+
+
     }
 }

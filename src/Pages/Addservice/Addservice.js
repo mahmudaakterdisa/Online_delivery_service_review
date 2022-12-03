@@ -3,10 +3,13 @@ import React from 'react';
 import Moment from 'react-moment';
 import './Addservice.css'
 import useTitle from '../../hooks/useTitle';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Addservice = () => {
 
     useTitle('Add service');
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const handleService = (event) => {
         event.preventDefault();
@@ -47,6 +50,7 @@ const Addservice = () => {
                 if (data.acknowledged) {
                     alert('Your service is successfully added')
                     form.reset();
+                    navigate('/')
                 }
             })
             .catch(error => console.error(error));

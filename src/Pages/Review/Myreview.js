@@ -30,6 +30,7 @@ const Myreview = () => {
             .then(data => setReviews(data))
     }, [user?.email, logout])
     useTitle('My-review');
+    console.log(reviews);
 
     //delete
     const handledelete = (id) => {
@@ -56,10 +57,25 @@ const Myreview = () => {
 
 
     return (
-        <div className='myreviews-container'>
-            {
-                reviews.map((myreviews) => <Userreviews key={myreviews._id} myreviews={myreviews} handledelete={handledelete}></Userreviews>)
-            }
+        <div className='reviews-section'>
+
+            <div className='reviewstext p-7 flex flex-col justify-center items-center'>
+
+                {
+                    reviews.length == 0 &&
+                    <p>No review were added.Please add some review.Thanks in Advance</p>
+                }
+
+            </div>
+            <div className='myreviews-container grid sm:grid-cols-1 lg:grid-cols-2 grid-cols-1 gap-5'>
+
+
+                {
+                    reviews.map((myreviews) => <Userreviews key={myreviews._id} myreviews={myreviews} handledelete={handledelete}></Userreviews>)
+                }
+
+
+            </div>
         </div>
     );
 };

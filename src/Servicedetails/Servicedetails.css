@@ -1,35 +1,36 @@
 .details-container {
-    width: 80%;
-    margin-left: 10%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 5%;
+    width: 100vw;
     margin-top: 10%;
     margin-bottom: 10%;
 }
 
-.review-container {
-    /* margin-top: 10%;
-    margin-bottom: 10%;
+.each-servicecard {
+    width: 80%;
+    padding: 5%;
+}
+
+.service-review {
     width: 80%;
 
-    margin-left: 10%; */
+}
+
+.review-container {
     background-color: gainsboro;
 }
 
 @media screen and (max-width: 576px) {
 
     .details-container {
-        width: 80%;
-        /* margin-left: 10%; */
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        /* row-gap: 5%; */
-        margin-top: 10%;
-        margin-bottom: 40%;
+        width: 90%;
+        margin-left: 15%;
     }
 
-    .detailsaboutservice {
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .details-container {
         width: 100%;
+
     }
 }

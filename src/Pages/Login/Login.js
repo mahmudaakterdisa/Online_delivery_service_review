@@ -40,7 +40,27 @@ const Login = () => {
         providerLogin(googleProvider)
             .then(result => {
                 const user = result.user;
+                const currentuser = {
+                    email: user.email
+                }
 
+
+                //get jwt token
+                // fetch('https://assignment-11-server-ecru.vercel.app/jwt', {
+                //     method: 'POST',
+                //     headers: {
+                //         'content-type': 'application/json'
+                //     },
+                //     body: JSON.stringify(currentuser)
+                // })
+
+                //     .then(res => res.json())
+                //     .then(data => {
+                //         console.log(data);
+
+                //         localStorage.setItem('sweet-token', data.token);
+                //         navigate(from, { replace: true });
+                //     });
                 navigate(from, { replace: true })
 
             })
@@ -69,22 +89,22 @@ const Login = () => {
                 }
                 console.log(currentUser);
                 //get jwt token
-                fetch('https://assignment-11-server-ecru.vercel.app/jwt', {
-                    method: 'POST',
-                    headers: {
-                        'content-type': 'application/json'
-                    },
-                    body: JSON.stringify(currentUser)
-                })
+                // fetch('https://assignment-11-server-ecru.vercel.app/jwt', {
+                //     method: 'POST',
+                //     headers: {
+                //         'content-type': 'application/json'
+                //     },
+                //     body: JSON.stringify(currentUser)
+                // })
 
-                    .then(res => res.json())
-                    .then(data => {
-                        console.log(data);
+                //     .then(res => res.json())
+                //     .then(data => {
+                //         console.log(data);
 
-                        localStorage.setItem('sweet-token', data.token);
-                        navigate(from, { replace: true });
-                    });
-
+                //         localStorage.setItem('sweet-token', data.token);
+                //         navigate(from, { replace: true });
+                //     });
+                navigate(from, { replace: true });
 
             })
             .catch(error => {

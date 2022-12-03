@@ -9,6 +9,7 @@ const Servicedetails = () => {
     const detailsdata = useLoaderData();
 
     const { user } = useContext(Authcontext);
+    const [loader, setLoader] = useState(false);
 
 
 
@@ -57,6 +58,7 @@ const Servicedetails = () => {
                     alert('Thanks for your review')
                     form.reset();
                 }
+                setLoader(true);
             })
             .catch(error => console.error(error));
 
@@ -76,20 +78,22 @@ const Servicedetails = () => {
 
 
     return (
-        <div className='details-container'>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl detailsaboutservice">
-                <figure><img src={service_image} alt="Shoes" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title">{service_name}</h2>
-                    <div className="text-2xl text-color">Price:{price}$</div>
-                    <p>{service_description}</p>
+        <div className='details-container grid sm:grid-cols-2 grid-cols-1 md:grid-cols-2'>
+            <div className='each-servicecard'>
+                <div className="card card-compact  bg-base-100 shadow-xl detailsaboutservice">
+                    <figure><img src={service_image} alt="Shoes" /></figure>
+                    <div className="card-body">
+                        <h2 className="card-title">{service_name}</h2>
+                        <div className="text-2xl text-color">Price:{price}$</div>
+                        <p>{service_description}</p>
+
+                    </div>
+
 
                 </div>
-
-
             </div>
 
-            <div>
+            <div className='service-review'>
                 <div>
 
                     {
