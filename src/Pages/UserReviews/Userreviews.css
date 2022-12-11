@@ -1,5 +1,13 @@
 @media screen and (max-width: 576px) {
-    .userreview-container {
+    .userreview-container img {
         width: 100%;
+        height: 30vh;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 900px) {
+    .userreview-container img {
+        width: 100%;
+        height: 30vh;
     }
 }

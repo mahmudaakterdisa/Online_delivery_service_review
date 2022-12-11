@@ -57,9 +57,9 @@ const Myreview = () => {
 
 
     return (
-        <div className='reviews-section'>
+        <div className='reviews-section flex justify-center items-center'>
 
-            <div className='reviewstext p-7 flex flex-col justify-center items-center'>
+            <div className=' flex flex-col justify-center items-center'>
 
                 {
                     reviews.length == 0 &&
